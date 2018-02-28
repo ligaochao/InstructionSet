@@ -1,0 +1,6 @@
+第一 ：统计个数
+
+client_init_setings.htm?actionType=CLIENT_INIT_SETINGS&platformID=0&appVersion=5.1.0&channelID=bseo' web*_nginx_access_bak.2018-02-22 |wc -l >> total.log;"
+
+这里是文件
+web*_nginx_access_bak.2018-02-22 ，代表两个
