@@ -1,0 +1,16 @@
+1、ssh 192.168.249.161	登录对应服务器
+vi /etc/hosts	检查、添加域名信息
+2、创建一个目录
+在opt目录下执行mkdir project
+3、将war包放到该路径下
+4、拷贝Tomcat容器的tar包到opt目录下，并进行解压
+tar -xvf tribe.tar
+5、检查映射文件
+cat /opt/tribe/conf/Catalina/localhost/gateway-provider.xml
+6、重启Tomcat容器
+ps -ef |grep tribe	查找进程
+kill -9 14599	杀掉进程
+cd /opt/tribe/bin
+./startup.sh	启动服务
+tailf ../logs/catalina.2018-02-26.out	检查启动日志是否报错
+
